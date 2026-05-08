@@ -48,8 +48,9 @@ day_list = [
     "Saturday",
     "Sunday",
 ]
-
-check_in_duration = df["Check-In Time"].describe(datetime_is_numeric=True)
+# Error 1: .describe does not expect keyword like datetime_is_numeric
+# Fix: Removed it since describe should automatically handle date
+check_in_duration = df["Check-In Time"].describe()
 
 all_departments = df["Department"].unique().tolist()
 wait_time_inputs = [
@@ -706,7 +707,8 @@ def update_table(start, end, clinic, admit_type, heatmap_click, reset_click, *ar
     )
     return table
 
-
+# Error 2: run_server not being recognized as command
+# Fix: Changed it to run instead of run_server
 # Run the server
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run(debug=True, port = 10030)       # Change: Added port change to 10030

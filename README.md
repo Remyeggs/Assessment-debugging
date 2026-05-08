@@ -11,3 +11,32 @@ This repository contains a broken web app built with Dash. Please follow the tas
    2. Use a modern python package manager that respects `pyproject.toml` and `.python-version`, rather than `pip`.
    3. Setup virtual environment, start the app, and access the app.
 6. Commit and push all the changes, and provide a link to your own repo in your submission in the last.
+
+# How to Run App
+
+# 1) Operating System Environment
+
+The application can be run through either operating systems Linux Arch or Linux Fedora
+Do not modify the python environment
+
+# 2) Managing the Package
+
+Use a modern python package that respects pyproject.toml and .python-version
+instead of pip packages
+
+# 3) Setting up and running
+
+The application can be run through a virtual environment
+Below are the commmands for activation:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+
+Afterwards run the python file:
+   python main.py
+
+Finally open in your browser based on website provided in the terminal
+
+
+```

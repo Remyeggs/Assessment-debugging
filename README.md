@@ -32,6 +32,7 @@ Below are the commmands for activation:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
+```
 
 Afterwards run the python file:
    python main.py
@@ -39,4 +40,4 @@ Afterwards run the python file:
 Finally open in your browser based on website provided in the terminal
 
 
-```
+
